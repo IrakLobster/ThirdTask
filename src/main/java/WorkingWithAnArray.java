@@ -12,7 +12,7 @@ public class WorkingWithAnArray {
 
     public static void main(String[] args) {
 
-        WorkingWithAnArray w = new WorkingWithAnArray(10,10,-10);
+        WorkingWithAnArray w = new WorkingWithAnArray(20,10,-10);
         w.getTextResult();
     }
 
@@ -64,8 +64,6 @@ public class WorkingWithAnArray {
         int minPositiveIndex = Integer.parseInt(parseResult[1]);
         int maxNegativeElement = Integer.parseInt(parseResult[2]);
         int maxNegativeElementIndex = Integer.parseInt(parseResult[3]);
-        for(int element : array) System.out.print(element + " ");
-        System.out.println("");
 
         if(minPositiveElement == maxElement + 1 && maxNegativeElement != minElement - 1) System.out.println("Минимальный положительный элемент не найден. Максимальный отрицательный элемент = " + maxNegativeElement);
         else if (minPositiveElement != maxElement + 1 && maxNegativeElement == minElement - 1) System.out.println("Максимальный отрицательный элемент не найден. Минимальный положительный элемент = " + minPositiveElement);
